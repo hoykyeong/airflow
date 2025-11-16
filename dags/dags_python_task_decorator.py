@@ -12,6 +12,6 @@ with DAG(
 ) as dag:
     @task(task_id="python_task_1") # task 데커레이터, 인자는 파이썬 오퍼레이터에서의 주도한 task_id랑 같은 파라미터
     def print_context(some_input):
-        pprint(some_input)
+        print(some_input)
 
     python_task_1 = print_context("task_decorator 실행")
