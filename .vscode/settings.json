@@ -4,6 +4,5 @@
     "python-envs.defaultPackageManager": "ms-python.python:pip",
     "python.analysis.extraPaths": [
     "D:/vscode/airflow/plugins",
-    "D:/vscode/airflow/plugins/common"
-  ]
+    "D:/vscode/airflow/plugins/common"]
 }
