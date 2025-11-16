@@ -42,4 +42,4 @@ with DAG(dag_id = 'dags_python_task_decorator',
          schedule='0 2 * * 1',
          start_date=pendulum.datetime(2025, 11, 14, tz='Asia/Seoul'),
          catchup=False):
-    print_context()
+    python_task_1 = print_context("task_decorator 실행")
