@@ -24,7 +24,6 @@ with DAG(
         }
     )
 
-
     @task(task_id="python_t2")
     def python_function2(**kwargs):
         print(kwargs)
