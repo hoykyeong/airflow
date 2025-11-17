@@ -28,7 +28,6 @@ with DAG(
             "end_date": "{{ data_interval_end }}"
         },
         op_kwargs={'start_date': None, 'end_date': None},
-        render_template_as_native_obj=True
     )
     @task(task_id="python_t2")
     def python_function2(**kwargs):
