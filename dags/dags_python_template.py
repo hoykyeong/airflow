@@ -1,4 +1,4 @@
-from airflow.sdk import DA
+from airflow.sdk import DAG
 import pendulum
 from airflow.providers.standard.operators.python import PythonOperator
 from airflow.decorators import task
