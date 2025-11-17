@@ -10,7 +10,7 @@ with DAG(
     start_date=pendulum.datetime(2025, 11, 14, tz="Asia/Seoul"), # dag이 언제부터 돌것인지
     catchup=False, # 돌린시점과 시작 시점 사이에 누락된 구간을 돌리지 않음, 일반적으로 False
     # dagrun_timeout= datetime.timedelta(minutes=60), # 60분 이상 돌면 실패
-    # tags=["example", "example2", "example3"],
+    # tags=["example", "example2", "example3"],   
 ) as dag:
     bash_t1 = BashOperator(
         task_id = "bash_t1",
