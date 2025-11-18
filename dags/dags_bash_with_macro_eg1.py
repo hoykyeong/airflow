@@ -13,6 +13,6 @@ with DAG(
         task_id = 'bash_task_1',
         # START_DATE : 전월 말일, END_DATE : 1일전(배치 돌기)
         env = {'START_DATE' : '{{data_interval_start.in_timezone("Asia/Seoul") | ds}}',
-                'END_DATE' : '{{(data_interval_end.in_timezone("Asia/Seoul") - macros.deteutil.relativedelta.relativedleta(days=1))| ds}}'},
+                'END_DATE' : '{{(data_interval_end.in_timezone("Asia/Seoul") - macros.dateutil.relativedelta.relativedelta(days=1)) | ds}}'},
         bash_command = 'echo "START_DATE : $START_DATE" && echo "END_DATE : $END_DATE"'
     )
