@@ -8,7 +8,7 @@ with DAG(
     start_date=pendulum.datetime(2025,11,14, tz='Asia/Seoul'),
     catchup=False
 ) as dag:
-    @task(task_id = 'python_bash')
+    @task(task_id = 'python_push')
     def python_push_xcom():
         result_dict = {'status' : 'Good', 'data' : [1,2,3], 'option_cnt' : 100}
         return result_dict
