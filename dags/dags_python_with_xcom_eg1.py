@@ -3,7 +3,7 @@ import pendulum
 
 with DAG(
     dag_id = "dags_python_with_xcom_eg1",
-    schedule="0 0 0 * *",
+    schedule="0 0 * * *",
     start_date=pendulum.datetime(2025, 11, 14, tz='Asia/Seoul'),
     catchup=False
 ) as dag:
